@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Física I</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="fisica.css">
+    <!-- Custom fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/imagenes/icon.ico" type="image/x-icon" />
+    <!-- JAVASCRIPT -->
+    <script src="/materias.js"></script>
+</head>
+
+<body id="body" onload="hide()">
+
+    <!-- Barra de navegación -->
+    <nav class="nav-bar" id="dark">
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/imagenes/logo3light.png" alt="logo" id="logoimg">
+            </a>
+        </div>
+
+        <div class="dropdown">
+            <div>
+                <button class="dropbtn" onclick="menu()">Menú</button>
+            </div>
+
+
+            <div id="menu" class="links">
+                <a href="/index.html#seccion" class="navLink" id="link1">Materias</a>
+                <a href="https://drive.google.com/file/d/1tC3VZyycS6yRu96JhYDFdBeNNAPNMFRw/view?usp=sharing"
+                    class="navLink" id="link2" target="_blank">Plan de estudio</a>
+                <a href="#" class="navLink" id="link3" onclick="noDesarrollado()">Ayudas</a>
+                <a href="/index.html#form" class="navLink" id="link4">Contacto</a>
+
+                <a class="navLink" onclick="lightMode()" id="show"><img src="/imagenes/icon2light.png" alt=""></a>
+                <a class="navLink" onclick="darkMode()" id="show2"><img src="/imagenes/icon.png" alt=""></a>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <header class="encabezado">
+
+        <!-- TITULO -->
+        <div class="titulo">
+            <p>Física I</p>
+        </div>
+        <!-- Fin TITULO -->
+
+        <div class="cronograma">
+            <p><a href="https://drive.google.com/open?id=16HmNP9pKfwWKZGtKjKABPaNCDbIee40b"
+                    target="_blank">Cronograma</a></p>
+        </div>
+
+        <div class="actualizacion">
+            <p id="subtitle">Introducción</p>
+            <p>Bueno Física I como en las UNC comienza por el capítulo de Óptica geométrica, por más que no sea el
+                primer capítulo, esto es porque no está tan relacionado con los siguientes temas como lo están estos
+                entre sí, en el <span>cronograma</span> está bien explicado como es el plan de la materia, por las
+                dudas. El orden de las unidades debajo está en como fué dado cada tema.</p>
+        </div>
+    </header>
+
+    <section class="unidades">
+        <p id="subtitle">Unidad 2 (Óptica geométrica)</p>
+
+        <ol>
+            <li>
+                <a href="https://drive.google.com/open?id=1SeudvI4v7wRfhQJj-3AvYE-4SYs0zqHp" target="_blank">
+                    -Introducción a la óptica geométrica
+                </a>
+            </li>
+            <li>
+                <a href="https://drive.google.com/open?id=1p_0Zb387HdNd4Tkjz--2hVN-ZunG9PRI" target="_blank">
+                    - Espejos y lentes (Tabla representativa)
+                </a>
+            </li>
+        </ol>
+
+        <p id="subtitle">Unidad 1 (Medición y Errores)</p>
+
+        <ol>
+            <li>
+                <a href="#">
+                    - Mediciones y Errores
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    - Error Absoluto y relativo
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    - Propagación de errores
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    - Cifras Significativas y redondeo
+                </a>
+            </li>
+        </ol>
+    </section>
+
+    <footer class="pie">
+        <P>Ing. en sistemas (UTN) ~ Matias Agustín Salicrú ~ <img src="/imagenes/LogoPie.png" alt="">
+        </P>
+    </footer>
+</body>
+
+</html>

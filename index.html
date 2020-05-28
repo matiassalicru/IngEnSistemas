@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ingeniería en Sistemas</title>
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/a4873bfbe7.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/a4873bfbe7.css">
+    <link rel="shortcut icon" href="/imagenes/icon.ico" type="image/x-icon" />
+
+</head>
+
+<body id="body" onload="hide()">
+
+    <!-- Barra de navegación -->
+    <nav class="nav-bar" id="dark">
+        <div class="logo" onclick="backToIndex()"><img src="./imagenes/logo3light.png" alt="logo" id="logoimg">
+        </div>
+
+        <div class="dropdown">
+
+            <div>
+                <button class="dropbtn" onclick="menu()">Menú</button>
+            </div>
+
+
+            <div id="menu" class="links">
+                <a href="#seccion" class="navLink" id="link1">Materias</a>
+                <a href="https://drive.google.com/file/d/1tC3VZyycS6yRu96JhYDFdBeNNAPNMFRw/view?usp=sharing"
+                    class="navLink" id="link2" target="_blank"> Plan de estudio</a>
+                <a href="#" class="navLink" id="link3" onclick="noDesarrollado()">Ayudas</a>
+                <a href="#form" class="navLink" id="link4">Contacto</a>
+
+                <a class="navLink mode" onclick="lightMode()" id="show"><img src="/imagenes/icon2light.png" alt=""
+                        id="button"></a>
+                <a class="navLink mode" onclick="darkMode()" id="show2"><img src="/imagenes/icon.png" alt=""
+                        id="button"></a>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Encabezado (De que se trata) -->
+    <header id="encabezado">
+        <div class="textoEncabezado" id="txtEnc">
+            <p>Hola que tal! Mi nombre es Matias Salicrú, tengo 23 años y soy estudiante de la
+                Universidad Tecnológica
+                Nacional de la
+                provincia de Córdoba y te doy la bienvenida a IngEnSistemas, ésta página fue creada con el objetivo de
+                tener al alcance los temas dados en la carrera de Ing. en sistemas. El material va a ir subiendose a
+                medida que vaya cursando las materias :D<br>
+                <span style="font-size: 15px; color:#454545">
+                    Cualquier duda o aporte me pueden enviar un mail en la sección de
+                    <span><a class=" contacto" href="#form"> contacto.</a></span>
+                </span>
+            </p>
+        </div>
+    </header>
+
+    <div class="saludo" id="saludos">
+        <p id="saludo"></p>
+        <input type='button' value="Poner nombre" onclick="cleanName()" id='cleanName'>
+    </div>
+
+    <!-- <div id="secciones"> -->
+
+    <!-- Sección 1,  Materias parte 1-->
+    <div id="seccion">
+
+        <div class="materias">
+            <a href="./algebra/algebra.html" id="imgLink" class="parrafo">
+                <h1>Algebra y Geometría <br> Analítica</h1>
+                <img src="./imagenes/algebra.png" alt="algebra" class="matImg">
+
+                <p id="parrafo">Algebra y Geometría Analítica es una de las materias bases de la
+                    carrera donde
+                    muchos de los temas que veremos en esta materia se van a utilizar durante toda la carrera, por
+                    lo tanto en importante darle la prioridad necesaria por encima de otras materias.
+                </p>
+            </a>
+        </div>
+
+        <div class="materias">
+            <a href="./ingles-i/ingles.html" id="imgLink" class="parrafo">
+                <h1>Inglés I</h1>
+                <img src="./imagenes/ingles4.png" alt="" class="matImg">
+
+                <p id="parrafo">El inglés es fundamental en cualquier aspecto de la vida, todo buen
+                    ingeniero debe
+                    saber manejar el inglés tanto de manera escrita como con el habla, aunque en esta materia solo
+                    vemos la parte de lectocomprensión es importante saber entender y poder desenvolvernos en el
+                    idioma.</p>
+            </a>
+        </div>
+
+        <div class="materias" id="materias">
+            <a href="/pye/pye.html" id="imgLink" class="parrafo">
+                <h1>Probabilidad y<br> Estadística</h1>
+                <img src="./imagenes/estadistica.png" alt="" class="matImg">
+
+                <p id="parrafo">
+                    Probabilidad y estadística es quizás una de las materias que los estudiantes menos valoran
+                    siendo de igual manera una de las más importantes ya que nos ayuda a entender los datos ya sea
+                    de una empresa como de la misma población, es una materia entretenida que debemos si o si llevar
+                    al día.</p>
+            </a>
+        </div>
+        <div class="materias">
+            <a href="/fisica-i/fisica.html" id="imgLink" class="parrafo">
+                <h1>Física I</h1>
+                <img src="./imagenes/fisica2.png" alt="" class="matImg">
+
+                <p id="parrafo">La Física es una de las bases para ingeniería, es algo que no
+                    podemos pasar por
+                    alto, una vez que logramos entender el por qué de las cosas nuestra mente empieza a pensar de
+                    otro modo teniendo en cuenta todos los aspectos que afecta la física.</p>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Seccion 2, materias parte 2 -->
+    <!-- 
+    <section id="seccion">
+
+    </section> -->
+    <!-- </div> -->
+
+    <!-- FORMULARIO DE CONTACTO -->
+
+    <form id="form" action="contactForm.php" class="contactForm" method="POST" spellcheck="false">
+        <p>Buenas, cualquier consulta u opinión será bien recibida y contestada a la brevedad, gracias! <br>
+            Los campos de nombre y Email son obligarios.</p>
+        <label>Nombre</label>
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Un Email" required>
+        <label>Mensaje</label>
+        <textarea name="message" id="" cols="30" rows="1" placeholder="Preguntas/Feedback"></textarea>
+        <button type="submit" name="submit" class="btn">Enviar mensaje</button>
+    </form>
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer class="pie">
+        <p>Ing. en sistemas (UTN) ~ Matias Agustín Salicrú ~ <img src="/imagenes/LogoPie.png" alt=""> <a class="volver"
+                href="#">Volver
+                Arriba</a>
+        </p>
+
+
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
