@@ -21,7 +21,8 @@
 
     <!-- Barra de navegación -->
     <nav class="nav-bar" id="dark">
-        <div class="logo" onclick="backToIndex()"><img src="./imagenes/logo3light.png" alt="logo" id="logoimg">
+        <div class="logo" onclick="backToIndex()">
+            <img src="./imagenes/logo3light.png" alt="logo" id="logoimg">
         </div>
 
         <div class="dropdown">
@@ -37,10 +38,10 @@
                     class="navLink" id="link2" target="_blank"> Plan de estudio</a>
                 <a href="#form" class="navLink" id="link4">Contacto</a>
 
-                <a class="navLink mode" onclick="lightMode()" id="show"><img src="/imagenes/icon2light.png" alt=""
+                <!-- <a class="navLink" onclick="lightMode()" id="show"><img src="/imagenes/icon2light.png" alt=""
                         id="button"></a>
-                <a class="navLink mode" onclick="darkMode()" id="show2"><img src="/imagenes/icon.png" alt=""
-                        id="button"></a>
+                <a class="navLink" onclick="darkMode()" id="show2"><img src="/imagenes/icon.png" alt="" id="button"></a> -->
+
             </div>
 
         </div>
@@ -50,79 +51,82 @@
     <!-- Encabezado (De que se trata) -->
     <header id="encabezado">
         <div class="introduccion">
+
             <img src="./imagenes/logoHead.png" alt="">
+
             <p class="texto">
                 Es una plataforma donde vas a encontrar de todo sobre lo que se llega a aprender en la carrera de
                 Ingeniería en Sistemas en la Universidad Tecnológica de Córdoba.
             </p>
+
             <div class="socialMedia">
-                <a href=""> <img src="./imagenes/instagram3.png" alt=""></a>
-                <a href=""> <img src="./imagenes/github3.png" alt=""></a>
-                <a href=""> <img src="./imagenes/linkedin1.png" alt=""></a>
+                <a href="https://www.instagram.com/matiassalicru/" target="_blank"> <img src="./imagenes/instagram3.png"
+                        alt=""></a>
+                <a href="https://github.com/matiassalicru" target="_blank"> <img src="./imagenes/github3.png"
+                        alt=""></a>
+                <a href="https://www.linkedin.com/in/matias-salicru/" target="_blank"> <img
+                        src="./imagenes/linkedin1.png" alt=""></a>
             </div>
+
         </div>
     </header>
-
-    <!-- <div class="saludo" id="saludos">
-        <p id="saludo"></p>
-        <input type='button' value="Poner nombre" onclick="cleanName()" id='cleanName'>
-    </div> -->
-
-    <!-- <div id="secciones"> -->
 
     <!-- Sección 1,  Materias parte 1-->
     <div id="seccion">
 
-        <div class="materias">
-            <a href="./algebra/algebra.html" id="imgLink" class="parrafo">
-                <h1>Algebra y Geometría <br> Analítica</h1>
-                <img src="./imagenes/algebra.png" alt="algebra" class="matImg">
-
-                <p id="parrafo">Algebra y Geometría Analítica es una de las materias bases de la
-                    carrera donde
-                    muchos de los temas que veremos en esta materia se van a utilizar durante toda la carrera, por
-                    lo tanto en importante darle la prioridad necesaria por encima de otras materias.
-                </p>
-            </a>
+        <div class="materias-titulo">
+            <p>
+                Materias
+            </p>
         </div>
 
         <div class="materias">
-            <a href="./ingles-i/ingles.html" id="imgLink" class="parrafo">
-                <h1>Inglés I</h1>
-                <img src="./imagenes/ingles4.png" alt="" class="matImg">
+            <ul>
+                <li>
+                    <a href="./algebra/algebra.html">
+                        Algebra y Geometría <br> Analítica
+                    </a>
+                </li>
+                <li>
+                    <a href="./ingles-i/ingles.html">
+                        Inglés I
+                    </a>
+                </li>
+                <li>
+                    <a href="/pye/pye.html">
+                        Probabilidad y<br> Estadística
+                    </a>
+                </li>
+                <li>
+                    <a href="/fisica-i/fisica.html">
+                        Física I
+                    </a>
+                </li>
+            </ul>
 
-                <p id="parrafo">El inglés es fundamental en cualquier aspecto de la vida, todo buen
-                    ingeniero debe
-                    saber manejar el inglés tanto de manera escrita como con el habla, aunque en esta materia solo
-                    vemos la parte de lectocomprensión es importante saber entender y poder desenvolvernos en el
-                    idioma.</p>
-            </a>
+            <ul>
+                <li>
+                    <a href="./algebra/algebra.html">
+                        Algebra y Geometría <br> Analítica
+                    </a>
+                </li>
+                <li>
+                    <a href="./ingles-i/ingles.html">
+                        Inglés I
+                    </a>
+                </li>
+                <li>
+                    <a href="/pye/pye.html">
+                        Probabilidad y<br> Estadística
+                    </a>
+                </li>
+                <li>
+                    <a href="/fisica-i/fisica.html">
+                        Física I
+                    </a>
+                </li>
+            </ul>
         </div>
-
-        <div class="materias" id="materias">
-            <a href="/pye/pye.html" id="imgLink" class="parrafo">
-                <h1>Probabilidad y<br> Estadística</h1>
-                <img src="./imagenes/estadistica.png" alt="" class="matImg">
-
-                <p id="parrafo">
-                    Probabilidad y estadística es quizás una de las materias que los estudiantes menos valoran
-                    siendo de igual manera una de las más importantes ya que nos ayuda a entender los datos ya sea
-                    de una empresa como de la misma población, es una materia entretenida que debemos si o si llevar
-                    al día.</p>
-            </a>
-        </div>
-        <div class="materias">
-            <a href="/fisica-i/fisica.html" id="imgLink" class="parrafo">
-                <h1>Física I</h1>
-                <img src="./imagenes/fisica2.png" alt="" class="matImg">
-
-                <p id="parrafo">La Física es una de las bases para ingeniería, es algo que no
-                    podemos pasar por
-                    alto, una vez que logramos entender el por qué de las cosas nuestra mente empieza a pensar de
-                    otro modo teniendo en cuenta todos los aspectos que afecta la física.</p>
-            </a>
-        </div>
-
     </div>
 
     <!-- Seccion 2, materias parte 2 -->

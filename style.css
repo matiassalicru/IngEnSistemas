@@ -31,23 +31,24 @@ body{
     align-items: center;
     width: 100vw;
     position: fixed;
-    margin-top: -2.5%;
+    margin: auto;
+    margin-top: -40px;
     background: #fff;
     box-shadow: 0px 3px 5px 0px rgba(179,179,179,1);
 }
 
 
-.logo{
+.nav-bar .logo{
     cursor: pointer;
     margin-top: 10px;
 }
 
-.logo img{
+.nav-bar .logo img{
     width: 200px;
     height: 40px;
 }
 
-.navLink{
+.nav-bar .navLink{
     margin: 1px 10px;
     transition: .7s;
     cursor: pointer;
@@ -55,14 +56,14 @@ body{
 }
 
 
-  .dropdown #menu a{  
+    .nav-bar .dropdown #menu a{  
         text-decoration: none;
         position: relative;
         overflow: hidden;
         transition: 0.7s all;
-      }
+    }
   
-        .dropdown #menu a:before{
+    .nav-bar .dropdown #menu a:before{
                 content: '';
                 width: 20px;
                 position: absolute;
@@ -71,7 +72,7 @@ body{
                 transition: 0.7s all;
         }
 
-        .dropdown #menu a:hover:before{
+        .nav-bar .dropdown #menu a:hover:before{
             border-bottom: 1px solid #313131;
             right: 0;
         }
@@ -88,7 +89,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./imagenes/encabezado3.png);
+    background-image: url(./imagenes/encabezado3212.png);
     background-position: center;
     background-size: cover;
     margin-top: 40px;
@@ -105,8 +106,6 @@ body{
     justify-content: flex-end;
     align-items: center;
     margin-left: 50vw;
-    /* margin-top: 10%; */
-    /* background: #dd6565b0; */
 }
 
 #encabezado .introduccion img{
@@ -127,7 +126,6 @@ body{
     justify-content: center;
     align-items: center;
     width: 80%;
-    /* background: #c5c5c5; */
 }
 
 #encabezado .socialMedia a{
@@ -136,58 +134,13 @@ body{
     align-items: center;
     margin: auto;
     font-size: 18px;
-    /* background: #f52121; */
 }
 
 #encabezado .socialMedia img{
     width: 70%;
 }
 
-    
-    /* FIN ENCABEZADO */
-
-
-    .saludo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 20%;
-        padding-top: 25px;
-        padding-bottom : 25px;
-        margin: auto;
-        margin-top: 25px;
-        background-color: #eeeeee;
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-    }
-    .saludo #cleanName {
-        padding: 5px;
-        margin: 5px;
-        text-decoration: none;
-        border: 1px solid #adadad;
-        border-radius: 5px;
-        background: none;
-        font-family: 'Baloo Da 2', cursive;
-        font-weight: 400;
-        line-height: 27px;
-        font-size: 16px;
-        color: #585858;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-    }
-    
-    .saludo #saludo{
-        font-size: 15px;
-    }
-
-    /* SECCIONES MATERIAS */
-
-
+/* SECCIONES MATERIAS */
 
 #seccion{
     display: flex;
@@ -197,51 +150,43 @@ body{
     flex-wrap: wrap;
 }
 
-     #seccion #imgLink{
-            background: none;
-            color: #454545;
-        }
+#seccion .materias-titulo{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 5%;
+    padding: 10px 30px;
+    border: 1px solid #454545;
+    width: 14vw;
+    font-size: 28px;
+    letter-spacing: 5px;
+    background-color: #a9b1af41;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
     
-     #seccion .materias{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        border: 2px solid transparent;
-        border-radius: 40px;
-        padding: 10px;
-        margin-top: 3%;
-        margin-left: 3%;
-        margin-right: 3%;
-        transition: 0.5s;
-        -webkit-border-radius: 40px;
-        -moz-border-radius: 40px;
-        -ms-border-radius: 40px;
-        -o-border-radius: 40px;
-        -webkit-transition: 0.5s;
-        -moz-transition: 0.5s;
-        -ms-transition: 0.5s;
-        -o-transition: 0.5s;
+#seccion .materias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    width: 20%;
+    margin-top: 50px;
 }
 
-         #seccion .materias:hover{
-            border: 2px solid #9de3d0;
-            background: rgba(186, 226, 216, 0.301);
-        }
 
-         #seccion .parrafo{
-            width: 80%;
-            transition: all 0.6s;
-        }
+#seccion .materias ul{
+    margin:10px;
+}
 
-         #seccion .parrafo img{
-            margin: 20px;
-        }
-         #seccion .parrafo #parrafo{
-            margin: 20px;
-        }
-        
+#seccion .materias ul li{
+    border: 1px solid #7d7d80;
+    margin: 10px;
+    width: 100%;
+}
         /* Footer */
 
 .pie{
